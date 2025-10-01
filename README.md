@@ -35,3 +35,13 @@ balance = 100	Starting amount
 if balance > 0:	Only subtracts if money is available
 with lock:	Ensures one thread modifies at a time
 Final balance = 0	Means exactly 100 safe subtractions ran
+
+
+===============LOCK()===================
+lock = threading.Lock()
+
+It creates a new Lock object from Python’s threading module.
+
+A Lock is a synchronization primitive that allows only one thread to hold it at a time.
+
+It’s used to prevent multiple threads from accessing shared resources simultaneously, avoiding race conditions.
