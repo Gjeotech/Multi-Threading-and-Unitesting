@@ -26,3 +26,12 @@ Keyword/Module	What it is	Purpose
 import asyncio	✅ A Python module (library)	Provides tools for writing asynchronous code
 async	✅ A Python keyword (syntax)	Used to define an asynchronous function
 """
+
+===============FOR COUNTER THREADING==========
+✅ TL;DR
+Thing	Explanation
+balance = 100	Starting amount
+10 threads x 10,000 loops	Tries to subtract many times
+if balance > 0:	Only subtracts if money is available
+with lock:	Ensures one thread modifies at a time
+Final balance = 0	Means exactly 100 safe subtractions ran
